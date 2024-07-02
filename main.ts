@@ -9,7 +9,7 @@
  * @copyright	GNU Lesser General Public License
  *
  * @author [email](1035868977@qq.com)
- * @version  V1.0.1
+ * @version  V1.1.0
  * @date  2024-07-02
  * 
  * TCL modifications: 
