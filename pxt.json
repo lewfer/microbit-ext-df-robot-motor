@@ -1,7 +1,7 @@
 {
     "name": "motor",
     "version": "0.0.1",
-    "description": "This is dc motor, stepper motor, steering gear library.",
+    "description": "Motor driver extension for DF-Robot board",
     "license": "GNU",
     "dependencies": {
         "core": "*",
