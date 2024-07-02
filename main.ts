@@ -253,15 +253,15 @@ namespace motor {
      * speed(0~255).
     */
     //% weight=90
-    //% blockId=motor_MotorRun block="Motor|%index|dir|%Dir|speed|%speed"
-    //% speed.min=0 speed.max=255
+    //% blockId=motor_MotorRun block="Motor|%index|direction|%Dir|speed|%speed"
+    //% speed.min=0 speed.max=100
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=2
     //% direction.fieldEditor="gridpicker" direction.fieldOptions.columns=2
     export function MotorRun(index: Motors, direction: Dir, speed: number): void {
         if (!initialized) {
             initPCA9685()
         }
-        speed = speed * 16 * direction; // map 255 to 4096
+        speed = speed * 41 * direction; // map 100 to 4096 (well. 4100)
         if (speed >= 4096) {
             speed = 4095
         }

@@ -4,7 +4,8 @@
     "description": "This is dc motor, stepper motor, steering gear library.",
     "license": "GNU",
     "dependencies": {
-        "core": "*"
+        "core": "*",
+        "microphone": "*"
     },
     "files": [
         "README.md",
@@ -14,5 +15,13 @@
     "testFiles": [
         "test.ts"
     ],
-    "public": false
+    "public": false,
+    "targetVersions": {
+        "target": "6.0.28",
+        "targetId": "microbit"
+    },
+    "supportedTargets": [
+        "microbit"
+    ],
+    "preferredEditor": "tsprj"
 }
